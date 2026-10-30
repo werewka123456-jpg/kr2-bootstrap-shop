@@ -1,0 +1,17 @@
+/* Минимальные собственные стили */
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1; /* Чтобы подвал прижимался к низу, если контента мало */
+}
+
+.placeholder-box {
+  min-height: 240px; /* Высота для заглушки изображения */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
