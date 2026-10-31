@@ -75,6 +75,7 @@ main {
 /* =========================================
     Кнопки
    ========================================= */
+
 .btn-primary {
   background-color: var(--color-primary) !important;
   border-color: var(--color-primary) !important;
@@ -102,6 +103,7 @@ main {
 /* =========================================
   Карточки
    ========================================= */
+
 .card {
   border-color: var(--color-border) !important;
   background-color: var(--color-white);
@@ -122,6 +124,7 @@ main {
 /* =========================================
     Подвал
    ========================================= */
+
 footer.bg-dark {
   background-color: var(--color-surface) !important;
   color: var(--color-surface-accent) !important;
@@ -130,6 +133,7 @@ footer.bg-dark {
 /* =========================================
    Адаптация под мобильные телефоны
    ========================================= */
+   
 @media (max-width: 768px) {
 
   .container {
