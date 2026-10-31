@@ -1,7 +1,28 @@
+/* =========================================
+    Переменные
+   ========================================= */
+:root {
+  --color-bg: #F8F9F3;
+  --color-text: #2F3B24;
+  --color-muted: #6B7A5B;
+  --color-primary: #556B2F;
+  --color-primary-dark: #3F4E22;
+  --color-border: #D6DCC8;
+  --color-surface: #222B17;
+  --color-surface-accent: #E8EBDD;
+  --color-white: #ffffff;
+}
+
+/* =========================================
+    каркас страницы
+   ========================================= */
 body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  background-color: var(--color-bg) !important; /* Перебиваем bg-light Bootstrap */
+  color: var(--color-text);
+  font-family: Arial, sans-serif;
 }
 
 main {
@@ -10,9 +31,88 @@ main {
 
 .placeholder-image {
   min-height: 320px;
+  background-color: var(--color-surface-accent) !important;
+  color: var(--color-muted) !important;
+  border-color: var(--color-border) !important;
 }
 
 .card-img-top {
   height: 180px;
   object-fit: cover;
+}
+
+/* =========================================
+    Шапка
+   ========================================= */
+.navbar.bg-dark {
+  background-color: var(--color-surface) !important;
+}
+
+.navbar-brand {
+  color: var(--color-white) !important;
+  font-weight: bold;
+}
+
+.navbar-nav .nav-link {
+  color: var(--color-surface-accent) !important;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+  color: var(--color-white) !important;
+}
+
+/* =========================================
+    Кнопки
+   ========================================= */
+.btn-primary {
+  background-color: var(--color-primary) !important;
+  border-color: var(--color-primary) !important;
+  color: var(--color-white) !important;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active {
+  background-color: var(--color-primary-dark) !important;
+  border-color: var(--color-primary-dark) !important;
+}
+
+.btn-outline-primary {
+  color: var(--color-primary) !important;
+  border-color: var(--color-primary) !important;
+}
+
+.btn-outline-primary:hover,
+.btn-outline-primary:active {
+  background-color: var(--color-primary) !important;
+  color: var(--color-white) !important;
+}
+
+/* =========================================
+  Карточки
+   ========================================= */
+.card {
+  border-color: var(--color-border) !important;
+  background-color: var(--color-white);
+}
+
+.card-title {
+  color: var(--color-text);
+}
+
+.bg-success {
+  background-color: var(--color-primary) !important;
+}
+
+.text-muted {
+  color: var(--color-muted) !important;
+}
+
+/* =========================================
+    Подвал
+   ========================================= */
+footer.bg-dark {
+  background-color: var(--color-surface) !important;
+  color: var(--color-surface-accent) !important;
 }
