@@ -33,3 +33,6 @@ kr2-bootstrap-shop/
 │   └── custom.css
 ├── README.md
 └── .gitignore
+
+## Ссылка на опубликованный проект
+https://werewka123456-jpg.github.io/kr2-bootstrap-shop/

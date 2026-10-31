@@ -1,4 +1,3 @@
-/* Минимальные собственные стили */
 body {
   min-height: 100vh;
   display: flex;
@@ -6,12 +5,14 @@ body {
 }
 
 main {
-  flex: 1; /* Чтобы подвал прижимался к низу, если контента мало */
+  flex: 1;
 }
 
-.placeholder-box {
-  min-height: 240px; /* Высота для заглушки изображения */
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.placeholder-image {
+  min-height: 320px;
+}
+
+.card-img-top {
+  height: 180px;
+  object-fit: cover;
 }
