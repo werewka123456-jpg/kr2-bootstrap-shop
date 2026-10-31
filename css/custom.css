@@ -11,11 +11,18 @@
   --color-surface: #222B17;
   --color-surface-accent: #E8EBDD;
   --color-white: #ffffff;
+
+  --bs-font-sans-serif: 'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
 }
 
 /* =========================================
     каркас страницы
    ========================================= */
+   
+body, .btn, .form-control, .form-select, .dropdown-menu, .modal-title, .card {
+  font-family: var(--bs-font-sans-serif);
+}
+
 body {
   min-height: 100vh;
   display: flex;
