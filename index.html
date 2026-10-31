@@ -82,55 +82,87 @@
 
     <section class="container my-5">
       <h2 class="text-center mb-4">Популярные товары</h2>
-      <div class="row g-4">
-        <div class="col-12 col-md-6 col-lg-4">
-          <div class="card h-100 shadow-sm">
-            <div class="card-body d-flex flex-column">
-              <div class="d-flex justify-content-between align-items-start mb-3">
-                <h3 class="card-title h5">JBL Flip 5</h3>
-                <span class="badge bg-success">Новинка</span>
+      
+      <div id="popularCarousel" class="carousel slide" data-bs-ride="carousel">
+        
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#popularCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#popularCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        </div>
+
+        <!-- Слайды -->
+        <div class="carousel-inner">
+          
+          <!-- Первый слайд -->
+          <div class="carousel-item active">
+            <div class="row justify-content-center g-4">
+      
+              <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm">
+                  <img src="images/flip5.jpg" class="card-img-top" alt="Колонка JBL Flip 5">
+                  <div class="card-body d-flex flex-column">
+                    <h3 class="card-title h5">JBL Flip 5</h3>
+                    <p class="card-text text-muted">Портативная колонка с мощным звуком.</p>
+                    <p class="fw-bold fs-5 mt-auto">9 990 руб.</p>
+                    <a href="product-flip5.html" class="btn btn-primary w-100">Подробнее</a>
+                  </div>
+                </div>
               </div>
-              <p class="card-text text-muted">Портативная колонка с мощным звуком и защитой от воды.</p>
-              <p class="fw-bold fs-5 mt-auto">9 990 руб.</p>
-              <div class="d-flex gap-2">
-                <a class="btn btn-primary" href="product.html">Подробнее</a>
-                <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#orderModal">Заказать</button>
+
+              <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm">
+                  <img src="images/SONY.jpg" class="card-img-top" alt="Sony WH-1000XM4">
+                  <div class="card-body d-flex flex-column">
+                    <h3 class="card-title h5">Sony WH-1000XM4</h3>
+                    <p class="card-text text-muted">Наушники с активным шумоподавлением.</p>
+                    <p class="fw-bold fs-5 mt-auto">29 990 руб.</p>
+                    <a href="product-sony.html" class="btn btn-primary w-100">Подробнее</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Второй слайд -->
+          <div class="carousel-item">
+            <div class="row justify-content-center g-4">
+              
+              <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm">
+                  <img src="images/MacBookAir.jpg" class="card-img-top" alt="MacBook Air">
+                  <div class="card-body d-flex flex-column">
+                    <h3 class="card-title h5">MacBook Air</h3>
+                    <p class="card-text text-muted">Лёгкий и мощный ноутбук.</p>
+                    <p class="fw-bold fs-5 mt-auto">99 990 руб.</p>
+                    <a href="product-macbook.html" class="btn btn-primary w-100">Подробнее</a>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm">
+                  <img src="images/vinil_arctic.jpg" class="card-img-top" alt="Arctic Monkeys AM">
+                  <div class="card-body d-flex flex-column">
+                    <h3 class="card-title h5">Arctic Monkeys — AM</h3>
+                    <p class="card-text text-muted">Культовый альбом на виниле.</p>
+                    <p class="fw-bold fs-5 mt-auto">4 800 руб.</p>
+                    <a href="product-arctic.html" class="btn btn-primary w-100">Подробнее</a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="col-12 col-md-6 col-lg-4">
-          <div class="card h-100 shadow-sm">
-            <div class="card-body d-flex flex-column">
-              <div class="d-flex justify-content-between align-items-start mb-3">
-                <h3 class="card-title h5">Sony WH-1000XM4</h3>
-                <span class="badge bg-warning text-dark">Хит</span>
-              </div>
-              <p class="card-text text-muted">Беспроводные наушники с активным шумоподавлением.</p>
-              <p class="fw-bold fs-5 mt-auto">29 990 руб.</p>
-              <div class="d-flex gap-2">
-                <a class="btn btn-primary" href="product.html">Подробнее</a>
-                <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#orderModal">Заказать</button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-md-6 col-lg-4">
-          <div class="card h-100 shadow-sm">
-            <div class="card-body d-flex flex-column">
-              <div class="d-flex justify-content-between align-items-start mb-3">
-                <h3 class="card-title h5">Винил Arctic Monkeys</h3>
-                <span class="badge bg-danger">Скидка</span>
-              </div>
-              <p class="card-text text-muted">Легендарный альбом AM на качественном 180-граммовом виниле.</p>
-              <p class="fw-bold fs-5 mt-auto">4 800 руб.</p>
-              <div class="d-flex gap-2">
-                <a class="btn btn-primary" href="product.html">Подробнее</a>
-                <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#orderModal">Заказать</button>
-              </div>
-            </div>
-          </div>
-        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#popularCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true" style="background-color: #222B17; border-radius: 50%;"></span>
+          <span class="visually-hidden">Предыдущий</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#popularCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true" style="background-color: #222B17; border-radius: 50%;"></span>
+          <span class="visually-hidden">Следующий</span>
+        </button>
+
       </div>
     </section>
   </main>
@@ -169,6 +201,6 @@
     </div>
   </div>
 
-  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="css/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
