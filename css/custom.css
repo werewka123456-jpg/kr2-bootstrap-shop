@@ -119,3 +119,39 @@ footer.bg-dark {
   background-color: var(--color-surface) !important;
   color: var(--color-surface-accent) !important;
 }
+
+/* =========================================
+   Адаптация под мобильные телефоны
+   ========================================= */
+@media (max-width: 768px) {
+
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  h1, .display-5 {
+    font-size: 2rem !important;
+  }
+  h2 {
+    font-size: 1.5rem !important;
+  }
+
+  .hero-actions .btn,
+  .d-flex.gap-2 .btn {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  body {
+    overflow-x: hidden;
+  }
+
+  .card-img-top {
+    height: 250px;
+  }
+
+  .card-text {
+    font-size: 0.95rem;
+  }
+}
