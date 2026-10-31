@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Каталог – Bootstrap Shop</title>
+  <title>Каталог – SOUNDHUB</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="css/custom.css">
 </head>
@@ -11,7 +11,7 @@
 
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
-      <a class="navbar-brand" href="index.html">Bootstrap Shop</a>
+      <a class="navbar-brand" href="index.html">SOUNDHUB</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -27,48 +27,166 @@
   </nav>
 
   <main class="container my-5">
-    <div class="alert alert-info" role="alert">
-      Выберите товар из каталога. Все карточки оформлены с помощью Bootstrap.
-    </div>
-
-    <div class="d-flex justify-content-between align-items-center mb-4">
-      <h1 class="h2 mb-0">Каталог товаров</h1>
-      <a class="btn btn-outline-primary" href="order.html">Оставить заявку</a>
-    </div>
-
+    <h1 class="mb-4 text-center">Каталог товаров</h1>
+    
     <div class="row g-4">
+      
       <div class="col-12 col-md-6 col-lg-4">
         <div class="card h-100 shadow-sm">
+          <img src="images/flip5.jpg" class="card-img-top" alt="Колонка JBL Flip 5">
           <div class="card-body d-flex flex-column">
-            <h2 class="card-title h5">Смартфон</h2>
-            <p class="card-text text-muted">Описание смартфона.</p>
-            <p class="fw-bold fs-5 mt-auto">25 000 руб.</p>
-            <a class="btn btn-primary" href="product.html">Подробнее</a>
+            <div class="d-flex justify-content-between align-items-start mb-2">
+              <h3 class="card-title h5">JBL Flip 5</h3>
+              <span class="badge bg-success">Хит</span>
+            </div>
+            <p class="card-text text-muted">Портативная колонка с мощным звуком и защитой от воды.</p>
+            <p class="fw-bold fs-5 mt-auto">9 990 руб.</p>
+            <div class="d-flex gap-2">
+              <a href="product.html" class="btn btn-primary w-100">Подробнее</a>
+            </div>
           </div>
         </div>
       </div>
+
       <div class="col-12 col-md-6 col-lg-4">
         <div class="card h-100 shadow-sm">
+          <img src="images/SONY.jpg" class="card-img-top" alt="Наушники Sony">
           <div class="card-body d-flex flex-column">
-            <h2 class="card-title h5">Наушники</h2>
-            <p class="card-text text-muted">Описание наушников.</p>
-            <p class="fw-bold fs-5 mt-auto">8 500 руб.</p>
-            <a class="btn btn-primary" href="product.html">Подробнее</a>
+            <div class="d-flex justify-content-between align-items-start mb-2">
+              <h3 class="card-title h5">Sony WH-1000XM4</h3>
+            </div>
+            <p class="card-text text-muted">Беспроводные наушники с активным шумоподавлением.</p>
+            <p class="fw-bold fs-5 mt-auto">29 990 руб.</p>
+            <div class="d-flex gap-2">
+              <a href="product.html" class="btn btn-primary w-100">Подробнее</a>
+            </div>
           </div>
         </div>
       </div>
+
       <div class="col-12 col-md-6 col-lg-4">
         <div class="card h-100 shadow-sm">
+          <img src="images/MacBookAir.jpg" class="card-img-top" alt="MacBook Air">
           <div class="card-body d-flex flex-column">
-            <h2 class="card-title h5">Ноутбук</h2>
-            <p class="card-text text-muted">Описание ноутбука.</p>
-            <p class="fw-bold fs-5 mt-auto">60 000 руб.</p>
-            <a class="btn btn-primary" href="product.html">Подробнее</a>
+            <div class="d-flex justify-content-between align-items-start mb-2">
+              <h3 class="card-title h5">MacBook Air</h3>
+              <span class="badge bg-danger">Скидка</span>
+            </div>
+            <p class="card-text text-muted">Лёгкий и мощный ноутбук для работы и учёбы.</p>
+            <p class="fw-bold fs-5 mt-auto">99 990 руб.</p>
+            <div class="d-flex gap-2">
+              <a href="product.html" class="btn btn-primary w-100">Подробнее</a>
+            </div>
           </div>
         </div>
       </div>
+
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card h-100 shadow-sm">
+          <img src="images/Fujifilm_xm5.jpg" class="card-img-top" alt="Fujifilm X-M5">
+          <div class="card-body d-flex flex-column">
+            <div class="d-flex justify-content-between align-items-start mb-2">
+              <h3 class="card-title h5">Fujifilm X-M5</h3>
+            </div>
+            <p class="card-text text-muted">Компактная беззеркальная камера с матрицей 26 Мп.</p>
+            <p class="fw-bold fs-5 mt-auto">89 990 руб.</p>
+            <div class="d-flex gap-2">
+              <a href="product.html" class="btn btn-primary w-100">Подробнее</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card h-100 shadow-sm">
+          <img src="images/marshal.jpg" class="card-img-top" alt="Marshall Major IV">
+          <div class="card-body d-flex flex-column">
+            <div class="d-flex justify-content-between align-items-start mb-2">
+              <h3 class="card-title h5">Marshall Major IV</h3>
+              <span class="badge bg-warning text-dark">Новинка</span>
+            </div>
+            <p class="card-text text-muted">Легендарный рок-звук и более 80 часов работы.</p>
+            <p class="fw-bold fs-5 mt-auto">19 990 руб.</p>
+            <div class="d-flex gap-2">
+              <a href="product.html" class="btn btn-primary w-100">Подробнее</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card h-100 shadow-sm">
+          <img src="images/vinil_arctic.jpg" class="card-img-top" alt="Arctic Monkeys AM">
+          <div class="card-body d-flex flex-column">
+            <div class="d-flex justify-content-between align-items-start mb-2">
+              <h3 class="card-title h5">Arctic Monkeys — AM</h3>
+              <span class="badge bg-success">Редкость</span>
+            </div>
+            <p class="card-text text-muted">Культовый альбом 2013 года на качественном виниле.</p>
+            <p class="fw-bold fs-5 mt-auto">4 800 руб.</p>
+            <div class="d-flex gap-2">
+              <a href="product.html" class="btn btn-primary w-100">Подробнее</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card h-100 shadow-sm">
+          <img src="images/vinil_Billie.jpg" class="card-img-top" alt="Billie Eilish">
+          <div class="card-body d-flex flex-column">
+            <div class="d-flex justify-content-between align-items-start mb-2">
+              <h3 class="card-title h5">Billie Eilish — Happier...</h3>
+            </div>
+            <p class="card-text text-muted">Альбом 2021 года, сочетающий нежный вокал и мрачные синтезаторы.</p>
+            <p class="fw-bold fs-5 mt-auto">4 600 руб.</p>
+            <div class="d-flex gap-2">
+              <a href="product.html" class="btn btn-primary w-100">Подробнее</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card h-100 shadow-sm">
+          <img src="images/vinil_Lana.jpg" class="card-img-top" alt="Lana Del Rey">
+          <div class="card-body d-flex flex-column">
+            <div class="d-flex justify-content-between align-items-start mb-2">
+              <h3 class="card-title h5">Lana Del Rey — Born To Die</h3>
+            </div>
+            <p class="card-text text-muted">Дебютный альбом, ставший мгновенной классикой.</p>
+            <p class="fw-bold fs-5 mt-auto">4 900 руб.</p>
+            <div class="d-flex gap-2">
+              <a href="product.html" class="btn btn-primary w-100">Подробнее</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card h-100 shadow-sm">
+          <img src="images/vinil_Neighbourhood.jpg" class="card-img-top" alt="The Neighbourhood">
+          <div class="card-body d-flex flex-column">
+            <div class="d-flex justify-content-between align-items-start mb-2">
+              <h3 class="card-title h5">The Neighbourhood — Wiped Out!</h3>
+            </div>
+            <p class="card-text text-muted">Атмосферный альбом, погружающий в ночной город.</p>
+            <p class="fw-bold fs-5 mt-auto">5 100 руб.</p>
+            <div class="d-flex gap-2">
+              <a href="product.html" class="btn btn-primary w-100">Подробнее</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </div>
   </main>
+
+  <footer class="bg-dark text-white py-4 mt-5">
+    <div class="container text-center">
+      <p class="mb-0">&copy; 2026 SOUNDHUB. Учебный проект.</p>
+    </div>
+  </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
