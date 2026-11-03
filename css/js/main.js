@@ -40,3 +40,29 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 });
+
+// === ЛОГИКА ПЕРЕКЛЮЧЕНИЯ ТЕМЫ ===
+document.addEventListener('DOMContentLoaded', () => {
+  const themeSwitch = document.getElementById('theme-switch');
+  const htmlElement = document.documentElement;
+
+  // 1. Проверяем, сохранил ли пользователь тему ранее
+  const savedTheme = localStorage.getItem('theme') || 'light';
+  htmlElement.setAttribute('data-bs-theme', savedTheme);
+  
+  // Если тема была темной, ставим переключатель в положение "включено"
+  if (themeSwitch) {
+    themeSwitch.checked = (savedTheme === 'dark');
+
+    // 2. Слушаем клики по переключателю
+    themeSwitch.addEventListener('change', () => {
+      if (themeSwitch.checked) {
+        htmlElement.setAttribute('data-bs-theme', 'dark');
+        localStorage.setItem('theme', 'dark'); // Запоминаем выбор
+      } else {
+        htmlElement.setAttribute('data-bs-theme', 'light');
+        localStorage.setItem('theme', 'light'); // Запоминаем выбор
+      }
+    });
+  }
+});
